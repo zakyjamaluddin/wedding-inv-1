@@ -1,0 +1,67 @@
+{
+  "project_id": "gen-lang-client-0293542165",
+  "firestore": {
+    "collections": {
+      "rsvps": {
+        "description": "RSVP submissions for the wedding",
+        "document_id": "auto-generated",
+        "fields": {
+          "name": {
+            "type": "string",
+            "description": "Name of the guest"
+          },
+          "attendance": {
+            "type": "string",
+            "description": "Whether the guest will attend ('yes' or 'no')"
+          },
+          "guests": {
+            "type": "number",
+            "description": "Number of guests attending"
+          },
+          "message": {
+            "type": "string",
+            "description": "Message or wishes for the couple"
+          },
+          "createdAt": {
+            "type": "timestamp",
+            "description": "When the RSVP was submitted"
+          }
+        },
+        "security_rules": {
+          "read": "true",
+          "write": "true",
+          "update": "false",
+          "delete": "false"
+        }
+      },
+      "invitations": {
+        "description": "Personalized guest invitation entries",
+        "document_id": "auto-generated",
+        "fields": {
+          "name": {
+            "type": "string",
+            "description": "Name of the invited guest"
+          },
+          "address": {
+            "type": "string",
+            "description": "Address or location of the invited guest"
+          },
+          "slug": {
+            "type": "string",
+            "description": "Unique URL slug for the invitation"
+          },
+          "createdAt": {
+            "type": "timestamp",
+            "description": "When the invitation link was generated"
+          }
+        },
+        "security_rules": {
+          "read": "true",
+          "write": "true",
+          "update": "true",
+          "delete": "true"
+        }
+      }
+    }
+  }
+}

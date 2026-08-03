@@ -1,0 +1,6 @@
+{
+  "name": "Elegant Wedding Invitation",
+  "description": "A beautiful, elegant wedding invitation website with a tosca green and gold theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
